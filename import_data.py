@@ -1,5 +1,6 @@
 import csv
 import mariadb
+import hashlib
 
 # Connect to MariaDB database
 def connect_db():
@@ -40,6 +41,10 @@ def insert_ticket(cursor, ticket_id, problem_description, category_id, severity,
         VALUES (%s, %s, %s, %s, %s, %s)
     """, (ticket_id, problem_description, category_id, severity, agent_id, solution_comments))
 
+# Helper function to hash ticket_id and return a number for language assignment
+def get_hashed_index(ticket_id, length):
+    return int(hashlib.sha256(ticket_id.encode('utf-8')).hexdigest(), 16) % length
+
 # Read data from the CSV file and insert into MariaDB tables
 def process_csv(file_path):
     connection = connect_db()
@@ -53,13 +58,16 @@ def process_csv(file_path):
     with open(file_path, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            ticket_id = row['Ticket_ID']
+            ticket_id = row['Ticket_ID']  # Now treating ticket_id as alphanumeric (string)
             problem_description = row['Problem Description']
             category_name = row['Category']
             severity = row['Severity']
             agent_name = row['Agent Name']
             solution_comments = row['Solution Comments']
-            language = languages[ticket_id % len(languages)]  # Assign a random language
+
+            # Use the hash of the ticket_id to assign a language
+            language_index = get_hashed_index(ticket_id, len(languages))
+            language = languages[language_index]
 
             # Insert unique category and agent, retrieve their IDs
             category_id = insert_categories(cursor, category_name)
