@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
 
 # Load the CSV data
-df = pd.read_csv('data/ticket_data.csv')
+df = pd.read_csv('data/payment_tickets_500.csv')
 
 # Debug: Print column names to ensure they match the CSV file
 print("Columns in the dataset:", df.columns)
