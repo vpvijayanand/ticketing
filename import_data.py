@@ -1,14 +1,19 @@
 import csv
-import mysql.connector
+import mariadb
 
-# Connect to MySQL database
+# Connect to MariaDB database
 def connect_db():
-    return mysql.connector.connect(
-        host="localhost",
-        user="vijay",  # Replace with your MySQL username
-        password="vijay123",  # Replace with your MySQL password
-        database="tickets_db"  # Replace with your database name
-    )
+    try:
+        return mariadb.connect(
+            user="vijay",  # Replace with your MariaDB username
+            password="vijay123",  # Replace with your MariaDB password
+            host="localhost",  # Replace with your MariaDB host
+            port=3306,  # Replace with your MariaDB port, if different
+            database="tickets_db"  # Replace with your database name
+        )
+    except mariadb.Error as e:
+        print(f"Error connecting to MariaDB Platform: {e}")
+        return None
 
 # Insert categories into the 'Categories' table
 def insert_categories(cursor, category_name):
@@ -35,9 +40,11 @@ def insert_ticket(cursor, ticket_id, problem_description, category_id, severity,
         VALUES (%s, %s, %s, %s, %s, %s)
     """, (ticket_id, problem_description, category_id, severity, agent_id, solution_comments))
 
-# Read data from the CSV file and insert into MySQL tables
+# Read data from the CSV file and insert into MariaDB tables
 def process_csv(file_path):
     connection = connect_db()
+    if connection is None:
+        return
     cursor = connection.cursor()
 
     # Sample agent languages
