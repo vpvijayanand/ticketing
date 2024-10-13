@@ -1,0 +1,501 @@
+Ticket_ID,Problem Description,Category,Severity,Agent Name,Solution Comments
+TKT001,Client reported a card declined error for a service payment.,Payment Pending,Low,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT002,Client reported a failed payment for a service payment.,Unauthorized Transaction,Low,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT003,User reported payment pending for a subscription payment.,Refund Request,Low,Alex Johnson,Re-enabled account access after verification.
+TKT004,Client reported a card declined error for a service payment.,Account Locked,Critical,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT005,Customer reported account lockout for a subscription payment.,Account Locked,High,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT006,Customer reported a card declined error for a service payment.,Payment Pending,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT007,Customer reported a failed payment for a subscription payment.,Payment Failure,High,Michael Green,Informed customer to check card expiry date and try again.
+TKT008,Client reported a failed payment for a service payment.,Payment Pending,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT009,Client reported account lockout for a subscription payment.,Account Locked,Medium,John Doe,Issue resolved by retrying payment.
+TKT010,User reported a failed payment for a service payment.,Refund Request,Medium,Patricia Brown,Issue resolved by retrying payment.
+TKT011,Client reported account lockout for an online purchase.,Payment Pending,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT012,User reported a failed payment for a subscription payment.,Payment Pending,Low,Chris Lee,Re-enabled account access after verification.
+TKT013,Client reported a failed payment for a service payment.,Unauthorized Transaction,Critical,Alex Johnson,Re-enabled account access after verification.
+TKT014,Client reported a failed payment for a subscription payment.,Refund Request,Medium,Michael Green,Assisted customer with pending payment confirmation.
+TKT015,User reported an unauthorized transaction for a service payment.,Card Declined,Medium,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT016,Member reported a refund issue for an online purchase.,Unauthorized Transaction,High,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT017,Client reported a failed payment for a service payment.,Payment Pending,Low,Michael Green,Re-enabled account access after verification.
+TKT018,Member reported a failed payment for a service payment.,Unauthorized Transaction,Medium,Michael Green,Assisted customer with pending payment confirmation.
+TKT019,User reported account lockout for a service payment.,Refund Request,Critical,Michael Green,Refund processed as per customer request.
+TKT020,Customer reported a failed payment for a subscription payment.,Payment Pending,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT021,User reported account lockout for an online purchase.,Refund Request,Medium,Michael Green,Refund processed as per customer request.
+TKT022,User reported a refund issue for an online purchase.,Card Declined,Medium,Chris Lee,Re-enabled account access after verification.
+TKT023,User reported account lockout for a subscription payment.,Payment Failure,Medium,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT024,User reported account lockout for an online purchase.,Account Locked,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT025,Client reported a failed payment for an online purchase.,Payment Failure,Low,Jane Smith,Issue resolved by retrying payment.
+TKT026,User reported a failed payment for an online purchase.,Payment Failure,Medium,Jane Smith,Re-enabled account access after verification.
+TKT027,User reported an unauthorized transaction for a subscription payment.,Payment Failure,Medium,Michael Green,Informed customer to check card expiry date and try again.
+TKT028,Client reported account lockout for an online purchase.,Payment Failure,High,Alex Johnson,Issue resolved by retrying payment.
+TKT029,Client reported a refund issue for an online purchase.,Payment Pending,Critical,Patricia Brown,Re-enabled account access after verification.
+TKT030,Client reported a card declined error for an online purchase.,Payment Failure,Critical,Chris Lee,Refund processed as per customer request.
+TKT031,Customer reported a failed payment for a service payment.,Payment Failure,Medium,Michael Green,Informed customer to check card expiry date and try again.
+TKT032,Customer reported a failed payment for a subscription payment.,Account Locked,Low,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT033,Customer reported payment pending for a service payment.,Card Declined,High,Chris Lee,Refund processed as per customer request.
+TKT034,Member reported payment pending for an online purchase.,Card Declined,Low,John Doe,Refund processed as per customer request.
+TKT035,User reported a card declined error for a subscription payment.,Refund Request,Critical,Jane Smith,Informed customer to check card expiry date and try again.
+TKT036,User reported a refund issue for a service payment.,Payment Pending,Low,Alex Johnson,Re-enabled account access after verification.
+TKT037,Member reported an unauthorized transaction for a service payment.,Payment Failure,Low,Michael Green,Informed customer to check card expiry date and try again.
+TKT038,Customer reported payment pending for a service payment.,Account Locked,Medium,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT039,User reported account lockout for a subscription payment.,Account Locked,Critical,Chris Lee,Assisted customer with pending payment confirmation.
+TKT040,User reported an unauthorized transaction for a subscription payment.,Account Locked,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT041,Customer reported a refund issue for a service payment.,Payment Pending,Medium,Patricia Brown,Refund processed as per customer request.
+TKT042,Member reported a failed payment for a subscription payment.,Payment Failure,Medium,Patricia Brown,Re-enabled account access after verification.
+TKT043,Customer reported a card declined error for a service payment.,Payment Pending,High,Jane Smith,Refund processed as per customer request.
+TKT044,Client reported a card declined error for a service payment.,Card Declined,Critical,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT045,User reported a card declined error for an online purchase.,Refund Request,Medium,Michael Green,Issue resolved by retrying payment.
+TKT046,Client reported account lockout for a service payment.,Refund Request,Critical,Jane Smith,Refund processed as per customer request.
+TKT047,Member reported an unauthorized transaction for an online purchase.,Refund Request,High,Alex Johnson,Re-enabled account access after verification.
+TKT048,Customer reported account lockout for a subscription payment.,Card Declined,Low,Patricia Brown,Re-enabled account access after verification.
+TKT049,Client reported an unauthorized transaction for a service payment.,Card Declined,Medium,Jane Smith,Issue resolved by retrying payment.
+TKT050,Customer reported a failed payment for a subscription payment.,Refund Request,Low,Chris Lee,Re-enabled account access after verification.
+TKT051,User reported payment pending for a service payment.,Payment Failure,Critical,Patricia Brown,Re-enabled account access after verification.
+TKT052,Customer reported account lockout for a service payment.,Payment Pending,Low,John Doe,Refund processed as per customer request.
+TKT053,Client reported a card declined error for a subscription payment.,Refund Request,Critical,Michael Green,Re-enabled account access after verification.
+TKT054,User reported a refund issue for a service payment.,Unauthorized Transaction,High,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT055,Member reported a failed payment for a service payment.,Account Locked,Critical,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT056,Customer reported account lockout for a subscription payment.,Unauthorized Transaction,Critical,Patricia Brown,Issue resolved by retrying payment.
+TKT057,User reported a refund issue for a subscription payment.,Account Locked,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT058,Customer reported a card declined error for a service payment.,Account Locked,High,Alex Johnson,Issue resolved by retrying payment.
+TKT059,Client reported a card declined error for a subscription payment.,Refund Request,Low,Chris Lee,Issue resolved by retrying payment.
+TKT060,Client reported a failed payment for a subscription payment.,Card Declined,High,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT061,User reported payment pending for a subscription payment.,Unauthorized Transaction,Low,Jane Smith,Re-enabled account access after verification.
+TKT062,Client reported a failed payment for a service payment.,Refund Request,Medium,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT063,Member reported a card declined error for a subscription payment.,Payment Failure,Critical,Jane Smith,Assisted customer with pending payment confirmation.
+TKT064,Client reported a refund issue for a subscription payment.,Unauthorized Transaction,High,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT065,Customer reported a refund issue for an online purchase.,Payment Failure,High,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT066,Customer reported a failed payment for an online purchase.,Refund Request,High,Chris Lee,Assisted customer with pending payment confirmation.
+TKT067,Client reported payment pending for an online purchase.,Card Declined,Medium,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT068,Client reported a card declined error for a service payment.,Refund Request,High,John Doe,Re-enabled account access after verification.
+TKT069,Client reported a refund issue for a service payment.,Account Locked,Medium,Patricia Brown,Issue resolved by retrying payment.
+TKT070,User reported a failed payment for an online purchase.,Card Declined,Medium,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT071,Client reported an unauthorized transaction for a subscription payment.,Payment Pending,Medium,Patricia Brown,Issue resolved by retrying payment.
+TKT072,User reported a refund issue for a subscription payment.,Payment Pending,Low,John Doe,Issue resolved by retrying payment.
+TKT073,User reported account lockout for an online purchase.,Account Locked,High,Jane Smith,Refund processed as per customer request.
+TKT074,Client reported payment pending for a subscription payment.,Payment Failure,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT075,User reported a failed payment for a subscription payment.,Account Locked,High,Jane Smith,Refund processed as per customer request.
+TKT076,Member reported an unauthorized transaction for an online purchase.,Payment Failure,Critical,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT077,Customer reported a failed payment for an online purchase.,Unauthorized Transaction,High,Chris Lee,Assisted customer with pending payment confirmation.
+TKT078,Customer reported a failed payment for a service payment.,Account Locked,Low,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT079,User reported a failed payment for a subscription payment.,Card Declined,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT080,User reported a card declined error for a service payment.,Card Declined,High,Jane Smith,Re-enabled account access after verification.
+TKT081,Customer reported a failed payment for an online purchase.,Unauthorized Transaction,Critical,Michael Green,Assisted customer with pending payment confirmation.
+TKT082,Client reported an unauthorized transaction for a service payment.,Unauthorized Transaction,High,Alex Johnson,Re-enabled account access after verification.
+TKT083,Customer reported an unauthorized transaction for a subscription payment.,Refund Request,High,Jane Smith,Informed customer to check card expiry date and try again.
+TKT084,Customer reported a card declined error for a subscription payment.,Refund Request,Critical,Michael Green,Assisted customer with pending payment confirmation.
+TKT085,Client reported account lockout for a service payment.,Card Declined,Critical,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT086,Client reported a refund issue for a subscription payment.,Card Declined,Critical,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT087,Customer reported payment pending for a service payment.,Refund Request,Medium,Jane Smith,Issue resolved by retrying payment.
+TKT088,Customer reported an unauthorized transaction for an online purchase.,Unauthorized Transaction,Medium,John Doe,Assisted customer with pending payment confirmation.
+TKT089,Customer reported payment pending for a subscription payment.,Unauthorized Transaction,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT090,Member reported payment pending for a service payment.,Payment Failure,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT091,Customer reported an unauthorized transaction for an online purchase.,Payment Pending,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT092,Member reported a card declined error for a subscription payment.,Card Declined,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT093,User reported a failed payment for a subscription payment.,Payment Failure,High,John Doe,Informed customer to check card expiry date and try again.
+TKT094,Member reported a card declined error for a subscription payment.,Payment Pending,High,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT095,User reported a refund issue for an online purchase.,Unauthorized Transaction,High,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT096,Client reported account lockout for a service payment.,Payment Pending,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT097,Member reported an unauthorized transaction for a subscription payment.,Unauthorized Transaction,Low,John Doe,Re-enabled account access after verification.
+TKT098,Member reported a refund issue for an online purchase.,Account Locked,High,John Doe,Informed customer to check card expiry date and try again.
+TKT099,User reported account lockout for an online purchase.,Unauthorized Transaction,Critical,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT100,Member reported a failed payment for a subscription payment.,Account Locked,High,Michael Green,Informed customer to check card expiry date and try again.
+TKT101,Member reported an unauthorized transaction for an online purchase.,Unauthorized Transaction,Low,Jane Smith,Re-enabled account access after verification.
+TKT102,Member reported an unauthorized transaction for an online purchase.,Refund Request,High,Patricia Brown,Re-enabled account access after verification.
+TKT103,User reported a refund issue for an online purchase.,Payment Failure,Critical,Chris Lee,Informed customer to check card expiry date and try again.
+TKT104,User reported an unauthorized transaction for a service payment.,Payment Failure,Low,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT105,Member reported a failed payment for a service payment.,Payment Pending,Critical,Chris Lee,Issue resolved by retrying payment.
+TKT106,Client reported payment pending for an online purchase.,Account Locked,Medium,Chris Lee,Refund processed as per customer request.
+TKT107,Client reported a failed payment for a subscription payment.,Payment Pending,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT108,Member reported payment pending for a subscription payment.,Refund Request,Low,Michael Green,Issue resolved by retrying payment.
+TKT109,User reported account lockout for an online purchase.,Account Locked,Critical,John Doe,Informed customer to check card expiry date and try again.
+TKT110,Client reported account lockout for a service payment.,Refund Request,Medium,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT111,Client reported an unauthorized transaction for a subscription payment.,Card Declined,Critical,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT112,Client reported an unauthorized transaction for a subscription payment.,Card Declined,Medium,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT113,Customer reported a failed payment for a subscription payment.,Payment Pending,High,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT114,Member reported a card declined error for a service payment.,Account Locked,Low,Michael Green,Refund processed as per customer request.
+TKT115,Client reported a card declined error for an online purchase.,Payment Failure,Low,Patricia Brown,Refund processed as per customer request.
+TKT116,Customer reported a failed payment for a subscription payment.,Card Declined,High,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT117,Customer reported a refund issue for an online purchase.,Card Declined,Low,Chris Lee,Issue resolved by retrying payment.
+TKT118,Client reported a failed payment for a subscription payment.,Payment Failure,High,John Doe,Informed customer to check card expiry date and try again.
+TKT119,User reported an unauthorized transaction for an online purchase.,Refund Request,Low,Chris Lee,Assisted customer with pending payment confirmation.
+TKT120,Member reported a failed payment for a subscription payment.,Refund Request,Medium,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT121,Client reported account lockout for a service payment.,Payment Failure,Low,Patricia Brown,Re-enabled account access after verification.
+TKT122,User reported a card declined error for an online purchase.,Refund Request,Low,Alex Johnson,Issue resolved by retrying payment.
+TKT123,Member reported a card declined error for a subscription payment.,Card Declined,Medium,Jane Smith,Refund processed as per customer request.
+TKT124,Member reported payment pending for an online purchase.,Card Declined,High,Alex Johnson,Refund processed as per customer request.
+TKT125,User reported a card declined error for a service payment.,Refund Request,Low,John Doe,Re-enabled account access after verification.
+TKT126,Client reported a card declined error for a service payment.,Card Declined,Medium,Jane Smith,Assisted customer with pending payment confirmation.
+TKT127,Customer reported a card declined error for a subscription payment.,Account Locked,Critical,Chris Lee,Re-enabled account access after verification.
+TKT128,Client reported a refund issue for an online purchase.,Unauthorized Transaction,Critical,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT129,User reported a refund issue for a service payment.,Account Locked,Low,John Doe,Refund processed as per customer request.
+TKT130,Customer reported a refund issue for an online purchase.,Refund Request,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT131,User reported an unauthorized transaction for an online purchase.,Account Locked,Critical,John Doe,Issue resolved by retrying payment.
+TKT132,Client reported a refund issue for a service payment.,Account Locked,Critical,Chris Lee,Issue resolved by retrying payment.
+TKT133,Client reported payment pending for an online purchase.,Card Declined,Critical,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT134,Customer reported a failed payment for a service payment.,Payment Pending,Critical,Patricia Brown,Re-enabled account access after verification.
+TKT135,Member reported account lockout for an online purchase.,Account Locked,High,Michael Green,Informed customer to check card expiry date and try again.
+TKT136,User reported payment pending for a subscription payment.,Account Locked,Critical,Michael Green,Assisted customer with pending payment confirmation.
+TKT137,User reported account lockout for an online purchase.,Account Locked,Critical,Alex Johnson,Issue resolved by retrying payment.
+TKT138,Customer reported account lockout for an online purchase.,Payment Pending,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT139,Client reported payment pending for a subscription payment.,Card Declined,High,Chris Lee,Re-enabled account access after verification.
+TKT140,Member reported a failed payment for a service payment.,Payment Failure,High,Michael Green,Assisted customer with pending payment confirmation.
+TKT141,Member reported a failed payment for a subscription payment.,Card Declined,Medium,Jane Smith,Issue resolved by retrying payment.
+TKT142,Client reported payment pending for a subscription payment.,Account Locked,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT143,Client reported a failed payment for a service payment.,Payment Pending,High,Jane Smith,Re-enabled account access after verification.
+TKT144,User reported a refund issue for an online purchase.,Unauthorized Transaction,Critical,Chris Lee,Refund processed as per customer request.
+TKT145,Client reported a refund issue for a service payment.,Payment Pending,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT146,User reported account lockout for a subscription payment.,Card Declined,Medium,John Doe,Assisted customer with pending payment confirmation.
+TKT147,Client reported a refund issue for a subscription payment.,Unauthorized Transaction,Critical,Chris Lee,Informed customer to check card expiry date and try again.
+TKT148,Customer reported a refund issue for a service payment.,Unauthorized Transaction,Medium,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT149,User reported payment pending for a subscription payment.,Payment Pending,High,Jane Smith,Re-enabled account access after verification.
+TKT150,Member reported a failed payment for a subscription payment.,Unauthorized Transaction,Critical,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT151,Client reported account lockout for a service payment.,Refund Request,Critical,Michael Green,Re-enabled account access after verification.
+TKT152,Client reported an unauthorized transaction for a service payment.,Payment Failure,High,Alex Johnson,Re-enabled account access after verification.
+TKT153,User reported account lockout for a service payment.,Payment Failure,Low,John Doe,Re-enabled account access after verification.
+TKT154,Customer reported account lockout for an online purchase.,Unauthorized Transaction,Critical,Patricia Brown,Re-enabled account access after verification.
+TKT155,Client reported an unauthorized transaction for an online purchase.,Card Declined,High,John Doe,Assisted customer with pending payment confirmation.
+TKT156,Client reported a refund issue for an online purchase.,Unauthorized Transaction,High,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT157,User reported a refund issue for a subscription payment.,Refund Request,Low,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT158,Client reported a refund issue for a service payment.,Card Declined,Critical,Chris Lee,Refund processed as per customer request.
+TKT159,Customer reported payment pending for a service payment.,Payment Failure,High,Chris Lee,Informed customer to check card expiry date and try again.
+TKT160,Member reported payment pending for an online purchase.,Unauthorized Transaction,Low,John Doe,Informed customer to check card expiry date and try again.
+TKT161,Client reported a failed payment for a subscription payment.,Account Locked,Critical,Chris Lee,Refund processed as per customer request.
+TKT162,Customer reported payment pending for an online purchase.,Account Locked,Low,Chris Lee,Informed customer to check card expiry date and try again.
+TKT163,Client reported a card declined error for a service payment.,Account Locked,Critical,Michael Green,Assisted customer with pending payment confirmation.
+TKT164,Client reported a failed payment for a subscription payment.,Unauthorized Transaction,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT165,Member reported a card declined error for a subscription payment.,Payment Pending,Critical,Jane Smith,Informed customer to check card expiry date and try again.
+TKT166,Member reported payment pending for a service payment.,Account Locked,High,Michael Green,Assisted customer with pending payment confirmation.
+TKT167,Client reported a refund issue for an online purchase.,Refund Request,High,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT168,Member reported a card declined error for a subscription payment.,Account Locked,Medium,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT169,Member reported payment pending for an online purchase.,Payment Pending,Critical,Michael Green,Refund processed as per customer request.
+TKT170,Member reported an unauthorized transaction for an online purchase.,Unauthorized Transaction,Medium,Jane Smith,Re-enabled account access after verification.
+TKT171,User reported payment pending for a subscription payment.,Payment Pending,Low,Alex Johnson,Re-enabled account access after verification.
+TKT172,Member reported account lockout for a subscription payment.,Card Declined,Medium,Michael Green,Re-enabled account access after verification.
+TKT173,User reported a failed payment for an online purchase.,Unauthorized Transaction,Low,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT174,User reported payment pending for a service payment.,Refund Request,Low,Michael Green,Re-enabled account access after verification.
+TKT175,User reported account lockout for a subscription payment.,Card Declined,Critical,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT176,Member reported a failed payment for a service payment.,Unauthorized Transaction,Critical,Jane Smith,Refund processed as per customer request.
+TKT177,Customer reported account lockout for a service payment.,Refund Request,Critical,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT178,Customer reported payment pending for a service payment.,Payment Failure,High,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT179,Client reported a refund issue for a service payment.,Refund Request,Critical,Alex Johnson,Refund processed as per customer request.
+TKT180,Member reported an unauthorized transaction for an online purchase.,Unauthorized Transaction,Low,Alex Johnson,Issue resolved by retrying payment.
+TKT181,Client reported a failed payment for a subscription payment.,Payment Pending,Medium,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT182,Member reported a card declined error for a subscription payment.,Account Locked,Critical,Chris Lee,Re-enabled account access after verification.
+TKT183,Member reported a refund issue for a service payment.,Payment Failure,Low,Patricia Brown,Issue resolved by retrying payment.
+TKT184,User reported a card declined error for an online purchase.,Unauthorized Transaction,Low,Jane Smith,Re-enabled account access after verification.
+TKT185,Member reported a card declined error for an online purchase.,Card Declined,High,Patricia Brown,Refund processed as per customer request.
+TKT186,Customer reported a failed payment for a subscription payment.,Account Locked,Critical,Chris Lee,Informed customer to check card expiry date and try again.
+TKT187,Customer reported account lockout for an online purchase.,Card Declined,Low,John Doe,Assisted customer with pending payment confirmation.
+TKT188,User reported a refund issue for an online purchase.,Account Locked,High,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT189,Client reported an unauthorized transaction for a subscription payment.,Card Declined,Medium,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT190,Client reported a refund issue for a subscription payment.,Card Declined,High,Alex Johnson,Refund processed as per customer request.
+TKT191,Member reported a refund issue for an online purchase.,Card Declined,Critical,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT192,User reported a refund issue for an online purchase.,Payment Failure,Critical,Chris Lee,Informed customer to check card expiry date and try again.
+TKT193,Member reported payment pending for a service payment.,Unauthorized Transaction,High,Jane Smith,Refund processed as per customer request.
+TKT194,Customer reported account lockout for an online purchase.,Payment Pending,Medium,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT195,Client reported a refund issue for an online purchase.,Payment Failure,Low,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT196,Member reported payment pending for a service payment.,Unauthorized Transaction,Low,Michael Green,Assisted customer with pending payment confirmation.
+TKT197,User reported a failed payment for a service payment.,Card Declined,Critical,John Doe,Refund processed as per customer request.
+TKT198,Customer reported a card declined error for a subscription payment.,Payment Pending,High,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT199,Member reported an unauthorized transaction for a service payment.,Unauthorized Transaction,High,John Doe,Issue resolved by retrying payment.
+TKT200,Member reported an unauthorized transaction for a service payment.,Unauthorized Transaction,Low,Alex Johnson,Issue resolved by retrying payment.
+TKT201,Client reported account lockout for a subscription payment.,Card Declined,Critical,John Doe,Refund processed as per customer request.
+TKT202,Client reported a refund issue for an online purchase.,Unauthorized Transaction,High,Patricia Brown,Re-enabled account access after verification.
+TKT203,User reported a refund issue for a subscription payment.,Account Locked,Medium,Michael Green,Refund processed as per customer request.
+TKT204,Client reported an unauthorized transaction for an online purchase.,Account Locked,Critical,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT205,Member reported payment pending for a subscription payment.,Payment Failure,Low,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT206,Member reported a failed payment for an online purchase.,Account Locked,Critical,John Doe,Refund processed as per customer request.
+TKT207,User reported account lockout for a subscription payment.,Refund Request,High,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT208,User reported a failed payment for a subscription payment.,Unauthorized Transaction,Medium,Patricia Brown,Issue resolved by retrying payment.
+TKT209,Client reported a failed payment for a service payment.,Account Locked,High,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT210,Member reported a failed payment for a subscription payment.,Unauthorized Transaction,High,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT211,User reported payment pending for an online purchase.,Unauthorized Transaction,Critical,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT212,Client reported a refund issue for a service payment.,Card Declined,High,Jane Smith,Issue resolved by retrying payment.
+TKT213,Member reported a card declined error for a service payment.,Account Locked,High,John Doe,Re-enabled account access after verification.
+TKT214,Member reported a refund issue for an online purchase.,Payment Pending,High,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT215,Member reported an unauthorized transaction for an online purchase.,Account Locked,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT216,Customer reported a failed payment for a service payment.,Payment Failure,High,Jane Smith,Refund processed as per customer request.
+TKT217,Member reported payment pending for a subscription payment.,Unauthorized Transaction,Medium,Jane Smith,Informed customer to check card expiry date and try again.
+TKT218,User reported a card declined error for a service payment.,Payment Pending,Medium,Michael Green,Refund processed as per customer request.
+TKT219,Client reported a refund issue for a service payment.,Payment Pending,Medium,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT220,Customer reported a refund issue for a subscription payment.,Card Declined,Medium,Michael Green,Issue resolved by retrying payment.
+TKT221,Customer reported a failed payment for a service payment.,Payment Failure,Low,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT222,Customer reported payment pending for an online purchase.,Card Declined,High,John Doe,Refund processed as per customer request.
+TKT223,Client reported an unauthorized transaction for a subscription payment.,Payment Failure,Medium,John Doe,Assisted customer with pending payment confirmation.
+TKT224,Member reported a refund issue for a service payment.,Payment Failure,High,Michael Green,Refund processed as per customer request.
+TKT225,Client reported a card declined error for a service payment.,Payment Pending,Low,John Doe,Issue resolved by retrying payment.
+TKT226,User reported a refund issue for a subscription payment.,Account Locked,Low,Jane Smith,Re-enabled account access after verification.
+TKT227,User reported a refund issue for an online purchase.,Account Locked,High,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT228,Member reported payment pending for an online purchase.,Account Locked,High,Michael Green,Issue resolved by retrying payment.
+TKT229,Customer reported a refund issue for an online purchase.,Card Declined,High,Michael Green,Issue resolved by retrying payment.
+TKT230,Member reported payment pending for an online purchase.,Unauthorized Transaction,Medium,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT231,Client reported a card declined error for an online purchase.,Unauthorized Transaction,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT232,Client reported payment pending for an online purchase.,Card Declined,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT233,User reported account lockout for a service payment.,Unauthorized Transaction,Critical,Chris Lee,Re-enabled account access after verification.
+TKT234,User reported payment pending for an online purchase.,Payment Pending,Medium,Chris Lee,Re-enabled account access after verification.
+TKT235,Customer reported a refund issue for a service payment.,Payment Failure,Critical,Patricia Brown,Refund processed as per customer request.
+TKT236,Client reported a card declined error for a service payment.,Account Locked,Low,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT237,User reported account lockout for a subscription payment.,Unauthorized Transaction,Critical,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT238,Member reported a failed payment for a service payment.,Account Locked,Low,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT239,User reported a card declined error for a service payment.,Payment Pending,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT240,Customer reported a failed payment for a subscription payment.,Unauthorized Transaction,Low,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT241,Client reported a card declined error for a service payment.,Payment Failure,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT242,Customer reported account lockout for a subscription payment.,Card Declined,Low,Alex Johnson,Refund processed as per customer request.
+TKT243,User reported account lockout for an online purchase.,Account Locked,Medium,Michael Green,Re-enabled account access after verification.
+TKT244,Client reported payment pending for an online purchase.,Refund Request,Low,Chris Lee,Assisted customer with pending payment confirmation.
+TKT245,Customer reported payment pending for a service payment.,Unauthorized Transaction,Critical,Patricia Brown,Re-enabled account access after verification.
+TKT246,Member reported payment pending for a service payment.,Payment Pending,Critical,Alex Johnson,Re-enabled account access after verification.
+TKT247,Member reported a card declined error for a subscription payment.,Card Declined,Low,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT248,Member reported payment pending for a subscription payment.,Refund Request,Medium,Chris Lee,Refund processed as per customer request.
+TKT249,Member reported account lockout for an online purchase.,Unauthorized Transaction,High,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT250,Client reported an unauthorized transaction for an online purchase.,Account Locked,Medium,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT251,User reported a refund issue for an online purchase.,Payment Failure,Low,Jane Smith,Refund processed as per customer request.
+TKT252,User reported a failed payment for a subscription payment.,Card Declined,High,Chris Lee,Re-enabled account access after verification.
+TKT253,User reported a failed payment for an online purchase.,Payment Pending,Critical,Jane Smith,Refund processed as per customer request.
+TKT254,User reported account lockout for an online purchase.,Payment Pending,High,Michael Green,Issue resolved by retrying payment.
+TKT255,Client reported a refund issue for a service payment.,Account Locked,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT256,Customer reported account lockout for a subscription payment.,Payment Pending,Medium,John Doe,Informed customer to check card expiry date and try again.
+TKT257,Member reported a card declined error for a service payment.,Payment Failure,Critical,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT258,User reported an unauthorized transaction for an online purchase.,Refund Request,High,Jane Smith,Issue resolved by retrying payment.
+TKT259,Client reported a refund issue for a service payment.,Refund Request,Critical,Michael Green,Issue resolved by retrying payment.
+TKT260,Member reported an unauthorized transaction for a service payment.,Payment Failure,Medium,Michael Green,Re-enabled account access after verification.
+TKT261,Member reported payment pending for a service payment.,Account Locked,Low,Chris Lee,Re-enabled account access after verification.
+TKT262,Member reported payment pending for an online purchase.,Unauthorized Transaction,High,Patricia Brown,Refund processed as per customer request.
+TKT263,User reported a refund issue for a subscription payment.,Refund Request,Critical,John Doe,Assisted customer with pending payment confirmation.
+TKT264,Member reported a refund issue for an online purchase.,Payment Pending,Low,Chris Lee,Informed customer to check card expiry date and try again.
+TKT265,Client reported account lockout for an online purchase.,Refund Request,Critical,John Doe,Informed customer to check card expiry date and try again.
+TKT266,Customer reported a failed payment for a service payment.,Account Locked,High,Michael Green,Informed customer to check card expiry date and try again.
+TKT267,Client reported payment pending for an online purchase.,Payment Failure,Low,Jane Smith,Assisted customer with pending payment confirmation.
+TKT268,Member reported account lockout for a subscription payment.,Unauthorized Transaction,Low,Michael Green,Assisted customer with pending payment confirmation.
+TKT269,Member reported a refund issue for an online purchase.,Payment Failure,High,Jane Smith,Refund processed as per customer request.
+TKT270,User reported a card declined error for a subscription payment.,Refund Request,High,Alex Johnson,Re-enabled account access after verification.
+TKT271,Member reported payment pending for a service payment.,Card Declined,Low,Patricia Brown,Re-enabled account access after verification.
+TKT272,Customer reported payment pending for a service payment.,Payment Pending,Critical,Alex Johnson,Issue resolved by retrying payment.
+TKT273,User reported payment pending for a service payment.,Unauthorized Transaction,High,Chris Lee,Re-enabled account access after verification.
+TKT274,Member reported a card declined error for an online purchase.,Payment Failure,Critical,Michael Green,Refund processed as per customer request.
+TKT275,Member reported account lockout for a subscription payment.,Card Declined,Critical,Chris Lee,Issue resolved by retrying payment.
+TKT276,Client reported a refund issue for an online purchase.,Payment Failure,High,Jane Smith,Issue resolved by retrying payment.
+TKT277,Member reported a failed payment for an online purchase.,Payment Pending,Medium,Patricia Brown,Re-enabled account access after verification.
+TKT278,Member reported account lockout for a subscription payment.,Unauthorized Transaction,Low,Jane Smith,Re-enabled account access after verification.
+TKT279,User reported account lockout for an online purchase.,Payment Failure,Low,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT280,Member reported payment pending for a service payment.,Payment Pending,Medium,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT281,Member reported a refund issue for a service payment.,Account Locked,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT282,Customer reported an unauthorized transaction for a subscription payment.,Refund Request,Medium,John Doe,Refund processed as per customer request.
+TKT283,Customer reported an unauthorized transaction for an online purchase.,Refund Request,Low,Alex Johnson,Refund processed as per customer request.
+TKT284,Client reported an unauthorized transaction for a service payment.,Unauthorized Transaction,Medium,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT285,Member reported payment pending for an online purchase.,Unauthorized Transaction,Medium,John Doe,Issue resolved by retrying payment.
+TKT286,Customer reported an unauthorized transaction for a subscription payment.,Payment Failure,High,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT287,User reported an unauthorized transaction for an online purchase.,Payment Pending,Critical,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT288,User reported account lockout for an online purchase.,Payment Pending,High,Michael Green,Refund processed as per customer request.
+TKT289,Customer reported payment pending for a service payment.,Refund Request,High,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT290,User reported account lockout for a service payment.,Payment Pending,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT291,Member reported a failed payment for a service payment.,Refund Request,Medium,Michael Green,Re-enabled account access after verification.
+TKT292,User reported a failed payment for a subscription payment.,Account Locked,High,Jane Smith,Informed customer to check card expiry date and try again.
+TKT293,Client reported an unauthorized transaction for a service payment.,Account Locked,Low,John Doe,Informed customer to check card expiry date and try again.
+TKT294,Customer reported payment pending for a subscription payment.,Refund Request,Critical,Alex Johnson,Issue resolved by retrying payment.
+TKT295,Member reported a refund issue for a subscription payment.,Card Declined,Low,Chris Lee,Refund processed as per customer request.
+TKT296,User reported payment pending for a service payment.,Payment Pending,Low,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT297,User reported a refund issue for an online purchase.,Payment Failure,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT298,User reported account lockout for a service payment.,Refund Request,High,John Doe,Issue resolved by retrying payment.
+TKT299,User reported account lockout for an online purchase.,Unauthorized Transaction,Critical,Jane Smith,Informed customer to check card expiry date and try again.
+TKT300,Customer reported a failed payment for an online purchase.,Payment Pending,Medium,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT301,Client reported a card declined error for an online purchase.,Card Declined,Low,Chris Lee,Issue resolved by retrying payment.
+TKT302,User reported a card declined error for a subscription payment.,Refund Request,Medium,Jane Smith,Issue resolved by retrying payment.
+TKT303,Member reported a card declined error for a subscription payment.,Refund Request,Low,Alex Johnson,Refund processed as per customer request.
+TKT304,Client reported payment pending for a service payment.,Account Locked,Medium,Jane Smith,Re-enabled account access after verification.
+TKT305,User reported an unauthorized transaction for an online purchase.,Unauthorized Transaction,High,Chris Lee,Assisted customer with pending payment confirmation.
+TKT306,Client reported a card declined error for a subscription payment.,Refund Request,High,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT307,Customer reported a refund issue for a service payment.,Card Declined,Medium,Jane Smith,Assisted customer with pending payment confirmation.
+TKT308,Customer reported a card declined error for a service payment.,Refund Request,Critical,John Doe,Re-enabled account access after verification.
+TKT309,User reported payment pending for an online purchase.,Unauthorized Transaction,Critical,John Doe,Assisted customer with pending payment confirmation.
+TKT310,Client reported account lockout for a subscription payment.,Refund Request,Low,Michael Green,Assisted customer with pending payment confirmation.
+TKT311,Customer reported payment pending for an online purchase.,Payment Pending,High,John Doe,Re-enabled account access after verification.
+TKT312,Customer reported a failed payment for an online purchase.,Account Locked,High,Chris Lee,Informed customer to check card expiry date and try again.
+TKT313,Member reported an unauthorized transaction for a subscription payment.,Account Locked,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT314,Member reported account lockout for a service payment.,Payment Failure,Critical,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT315,Customer reported account lockout for a service payment.,Card Declined,Critical,John Doe,Re-enabled account access after verification.
+TKT316,Client reported payment pending for a service payment.,Account Locked,Low,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT317,Member reported an unauthorized transaction for a subscription payment.,Unauthorized Transaction,Medium,Patricia Brown,Refund processed as per customer request.
+TKT318,User reported an unauthorized transaction for a subscription payment.,Payment Pending,Critical,Michael Green,Refund processed as per customer request.
+TKT319,Customer reported a refund issue for a service payment.,Refund Request,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT320,Client reported a failed payment for a service payment.,Payment Pending,Low,John Doe,Issue resolved by retrying payment.
+TKT321,User reported an unauthorized transaction for a subscription payment.,Payment Pending,High,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT322,Member reported a card declined error for a subscription payment.,Refund Request,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT323,Member reported payment pending for a service payment.,Unauthorized Transaction,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT324,User reported a card declined error for a service payment.,Payment Pending,Medium,John Doe,Assisted customer with pending payment confirmation.
+TKT325,Customer reported an unauthorized transaction for a service payment.,Unauthorized Transaction,High,Chris Lee,Informed customer to check card expiry date and try again.
+TKT326,Client reported payment pending for a subscription payment.,Unauthorized Transaction,Critical,Jane Smith,Refund processed as per customer request.
+TKT327,Customer reported a card declined error for a service payment.,Payment Pending,Critical,Michael Green,Issue resolved by retrying payment.
+TKT328,User reported a card declined error for an online purchase.,Card Declined,Low,Alex Johnson,Refund processed as per customer request.
+TKT329,Client reported payment pending for an online purchase.,Payment Failure,Medium,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT330,Client reported payment pending for a subscription payment.,Unauthorized Transaction,Medium,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT331,User reported an unauthorized transaction for a service payment.,Unauthorized Transaction,Critical,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT332,User reported an unauthorized transaction for a service payment.,Account Locked,Critical,Jane Smith,Refund processed as per customer request.
+TKT333,Client reported a failed payment for a service payment.,Unauthorized Transaction,Low,Jane Smith,Re-enabled account access after verification.
+TKT334,Member reported a card declined error for an online purchase.,Card Declined,Low,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT335,Customer reported a refund issue for a subscription payment.,Payment Pending,Medium,John Doe,Issue resolved by retrying payment.
+TKT336,Client reported payment pending for an online purchase.,Refund Request,Critical,Michael Green,Issue resolved by retrying payment.
+TKT337,User reported a refund issue for a service payment.,Payment Failure,Low,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT338,Client reported a refund issue for a service payment.,Payment Pending,High,Chris Lee,Issue resolved by retrying payment.
+TKT339,Client reported an unauthorized transaction for a subscription payment.,Payment Pending,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT340,Customer reported a failed payment for a subscription payment.,Payment Failure,High,Chris Lee,Re-enabled account access after verification.
+TKT341,Customer reported payment pending for an online purchase.,Refund Request,High,Chris Lee,Re-enabled account access after verification.
+TKT342,Client reported payment pending for a subscription payment.,Payment Failure,High,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT343,Client reported payment pending for an online purchase.,Payment Pending,Critical,Patricia Brown,Refund processed as per customer request.
+TKT344,User reported a refund issue for a service payment.,Refund Request,Medium,John Doe,Assisted customer with pending payment confirmation.
+TKT345,User reported an unauthorized transaction for an online purchase.,Payment Pending,Medium,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT346,User reported a refund issue for a subscription payment.,Refund Request,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT347,Member reported an unauthorized transaction for a subscription payment.,Refund Request,Low,John Doe,Refund processed as per customer request.
+TKT348,Member reported an unauthorized transaction for an online purchase.,Refund Request,Critical,John Doe,Informed customer to check card expiry date and try again.
+TKT349,Client reported payment pending for a subscription payment.,Payment Failure,Critical,Jane Smith,Re-enabled account access after verification.
+TKT350,Client reported payment pending for a subscription payment.,Payment Failure,Low,Michael Green,Re-enabled account access after verification.
+TKT351,Client reported an unauthorized transaction for an online purchase.,Refund Request,Low,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT352,User reported payment pending for an online purchase.,Payment Pending,Medium,Jane Smith,Informed customer to check card expiry date and try again.
+TKT353,Client reported an unauthorized transaction for an online purchase.,Payment Failure,Medium,Jane Smith,Issue resolved by retrying payment.
+TKT354,Client reported payment pending for a service payment.,Refund Request,Medium,Jane Smith,Refund processed as per customer request.
+TKT355,User reported an unauthorized transaction for a subscription payment.,Payment Failure,Low,John Doe,Informed customer to check card expiry date and try again.
+TKT356,Customer reported payment pending for an online purchase.,Unauthorized Transaction,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT357,Client reported a card declined error for an online purchase.,Refund Request,Critical,Jane Smith,Refund processed as per customer request.
+TKT358,Client reported account lockout for an online purchase.,Refund Request,Critical,Jane Smith,Refund processed as per customer request.
+TKT359,Client reported payment pending for a subscription payment.,Refund Request,Critical,Chris Lee,Issue resolved by retrying payment.
+TKT360,Client reported payment pending for a subscription payment.,Account Locked,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT361,Client reported a refund issue for an online purchase.,Card Declined,High,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT362,Client reported account lockout for an online purchase.,Card Declined,High,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT363,Client reported a refund issue for a subscription payment.,Account Locked,Medium,Alex Johnson,Issue resolved by retrying payment.
+TKT364,Client reported payment pending for a subscription payment.,Payment Failure,High,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT365,Member reported an unauthorized transaction for a subscription payment.,Card Declined,Critical,Jane Smith,Informed customer to check card expiry date and try again.
+TKT366,Member reported a card declined error for an online purchase.,Account Locked,Medium,Chris Lee,Refund processed as per customer request.
+TKT367,User reported a refund issue for an online purchase.,Card Declined,High,Jane Smith,Informed customer to check card expiry date and try again.
+TKT368,Client reported payment pending for a subscription payment.,Unauthorized Transaction,High,Jane Smith,Issue resolved by retrying payment.
+TKT369,Member reported an unauthorized transaction for a service payment.,Refund Request,Critical,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT370,User reported account lockout for an online purchase.,Unauthorized Transaction,Medium,Alex Johnson,Issue resolved by retrying payment.
+TKT371,Client reported account lockout for an online purchase.,Account Locked,Low,John Doe,Informed customer to check card expiry date and try again.
+TKT372,User reported payment pending for an online purchase.,Payment Pending,Low,Alex Johnson,Issue resolved by retrying payment.
+TKT373,Customer reported payment pending for an online purchase.,Card Declined,Critical,John Doe,Issue resolved by retrying payment.
+TKT374,Member reported a failed payment for a subscription payment.,Refund Request,High,Michael Green,Informed customer to check card expiry date and try again.
+TKT375,Customer reported a refund issue for a service payment.,Account Locked,Low,Chris Lee,Refund processed as per customer request.
+TKT376,Member reported account lockout for a service payment.,Card Declined,Critical,Patricia Brown,Refund processed as per customer request.
+TKT377,Member reported a card declined error for an online purchase.,Unauthorized Transaction,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT378,Customer reported a failed payment for a service payment.,Payment Failure,Critical,Chris Lee,Informed customer to check card expiry date and try again.
+TKT379,Customer reported account lockout for a service payment.,Payment Pending,High,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT380,Client reported account lockout for an online purchase.,Refund Request,High,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT381,User reported a failed payment for a service payment.,Payment Failure,Low,Chris Lee,Issue resolved by retrying payment.
+TKT382,Member reported a refund issue for a subscription payment.,Card Declined,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT383,Member reported a card declined error for an online purchase.,Payment Failure,High,John Doe,Informed customer to check card expiry date and try again.
+TKT384,Client reported account lockout for a service payment.,Payment Failure,High,Michael Green,Assisted customer with pending payment confirmation.
+TKT385,User reported account lockout for an online purchase.,Card Declined,Medium,Alex Johnson,Issue resolved by retrying payment.
+TKT386,Client reported a refund issue for a service payment.,Account Locked,High,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT387,Client reported account lockout for a service payment.,Payment Failure,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT388,User reported a failed payment for a subscription payment.,Card Declined,High,Patricia Brown,Issue resolved by retrying payment.
+TKT389,Customer reported a failed payment for a subscription payment.,Card Declined,Critical,Jane Smith,Re-enabled account access after verification.
+TKT390,Member reported a failed payment for a service payment.,Payment Failure,Medium,Alex Johnson,Re-enabled account access after verification.
+TKT391,Client reported payment pending for an online purchase.,Unauthorized Transaction,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT392,Client reported a failed payment for an online purchase.,Unauthorized Transaction,Low,Patricia Brown,Issue resolved by retrying payment.
+TKT393,Customer reported a refund issue for a service payment.,Card Declined,Low,Chris Lee,Assisted customer with pending payment confirmation.
+TKT394,User reported a failed payment for a subscription payment.,Payment Failure,Medium,Michael Green,Re-enabled account access after verification.
+TKT395,Customer reported payment pending for an online purchase.,Account Locked,Medium,John Doe,Issue resolved by retrying payment.
+TKT396,Customer reported a refund issue for a subscription payment.,Payment Failure,Low,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT397,Customer reported an unauthorized transaction for a service payment.,Unauthorized Transaction,Low,Jane Smith,Re-enabled account access after verification.
+TKT398,Customer reported a failed payment for an online purchase.,Account Locked,Critical,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT399,Customer reported a failed payment for a subscription payment.,Refund Request,High,Jane Smith,Refund processed as per customer request.
+TKT400,User reported a failed payment for a subscription payment.,Card Declined,Low,Chris Lee,Issue resolved by retrying payment.
+TKT401,User reported an unauthorized transaction for a service payment.,Payment Failure,Medium,Michael Green,Informed customer to check card expiry date and try again.
+TKT402,Customer reported an unauthorized transaction for a service payment.,Payment Pending,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT403,Client reported an unauthorized transaction for a subscription payment.,Payment Failure,Low,Michael Green,Informed customer to check card expiry date and try again.
+TKT404,User reported a refund issue for an online purchase.,Unauthorized Transaction,High,Jane Smith,Re-enabled account access after verification.
+TKT405,Client reported an unauthorized transaction for a subscription payment.,Payment Pending,Low,Jane Smith,Informed customer to check card expiry date and try again.
+TKT406,Member reported account lockout for an online purchase.,Card Declined,Low,Chris Lee,Refund processed as per customer request.
+TKT407,Member reported payment pending for a service payment.,Card Declined,Medium,Michael Green,Issue resolved by retrying payment.
+TKT408,Client reported account lockout for an online purchase.,Payment Failure,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT409,Customer reported a refund issue for a subscription payment.,Unauthorized Transaction,High,Alex Johnson,Issue resolved by retrying payment.
+TKT410,Customer reported account lockout for a subscription payment.,Account Locked,Low,Patricia Brown,Informed customer to check card expiry date and try again.
+TKT411,Client reported payment pending for a subscription payment.,Payment Pending,Medium,Chris Lee,Issue resolved by retrying payment.
+TKT412,Customer reported an unauthorized transaction for a service payment.,Payment Failure,High,Jane Smith,Issue resolved by retrying payment.
+TKT413,Customer reported an unauthorized transaction for a service payment.,Card Declined,Low,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT414,Member reported account lockout for a subscription payment.,Payment Failure,Medium,Jane Smith,Issue resolved by retrying payment.
+TKT415,User reported a card declined error for a subscription payment.,Card Declined,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT416,Customer reported account lockout for a service payment.,Unauthorized Transaction,High,Michael Green,Re-enabled account access after verification.
+TKT417,Member reported a card declined error for an online purchase.,Payment Pending,Low,Alex Johnson,Issue resolved by retrying payment.
+TKT418,Customer reported account lockout for an online purchase.,Card Declined,Critical,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT419,Client reported an unauthorized transaction for a service payment.,Refund Request,High,Patricia Brown,Assisted customer with pending payment confirmation.
+TKT420,Customer reported a refund issue for a service payment.,Payment Pending,High,Michael Green,Informed customer to check card expiry date and try again.
+TKT421,Member reported a refund issue for an online purchase.,Unauthorized Transaction,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT422,Client reported account lockout for a subscription payment.,Refund Request,High,Chris Lee,Re-enabled account access after verification.
+TKT423,User reported account lockout for a service payment.,Card Declined,High,Patricia Brown,Re-enabled account access after verification.
+TKT424,Member reported a failed payment for a subscription payment.,Payment Failure,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT425,Customer reported a failed payment for a subscription payment.,Card Declined,Low,Chris Lee,Assisted customer with pending payment confirmation.
+TKT426,Customer reported a card declined error for a service payment.,Account Locked,Medium,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT427,Customer reported a card declined error for a service payment.,Payment Failure,High,Jane Smith,Refund processed as per customer request.
+TKT428,Member reported a failed payment for a subscription payment.,Payment Pending,Medium,Chris Lee,Refund processed as per customer request.
+TKT429,Customer reported a card declined error for an online purchase.,Refund Request,Low,Chris Lee,Issue resolved by retrying payment.
+TKT430,Member reported payment pending for an online purchase.,Unauthorized Transaction,Critical,Chris Lee,Blocked unauthorized transaction and advised client to change password.
+TKT431,User reported a card declined error for an online purchase.,Payment Failure,Medium,Michael Green,Informed customer to check card expiry date and try again.
+TKT432,Member reported a card declined error for an online purchase.,Unauthorized Transaction,Low,Michael Green,Informed customer to check card expiry date and try again.
+TKT433,Client reported payment pending for a subscription payment.,Card Declined,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT434,User reported payment pending for an online purchase.,Card Declined,Critical,Patricia Brown,Issue resolved by retrying payment.
+TKT435,Member reported payment pending for a subscription payment.,Payment Failure,Low,Michael Green,Informed customer to check card expiry date and try again.
+TKT436,Customer reported account lockout for an online purchase.,Payment Pending,Low,Jane Smith,Issue resolved by retrying payment.
+TKT437,Customer reported an unauthorized transaction for a service payment.,Refund Request,Critical,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT438,User reported an unauthorized transaction for a subscription payment.,Payment Pending,Medium,Jane Smith,Blocked unauthorized transaction and advised client to change password.
+TKT439,Customer reported a refund issue for a service payment.,Card Declined,Medium,Alex Johnson,Refund processed as per customer request.
+TKT440,Customer reported account lockout for a subscription payment.,Refund Request,Low,John Doe,Informed customer to check card expiry date and try again.
+TKT441,Member reported an unauthorized transaction for a subscription payment.,Refund Request,Medium,Patricia Brown,Issue resolved by retrying payment.
+TKT442,Customer reported a card declined error for a subscription payment.,Payment Pending,Medium,John Doe,Issue resolved by retrying payment.
+TKT443,User reported a failed payment for a service payment.,Refund Request,Low,Michael Green,Assisted customer with pending payment confirmation.
+TKT444,Member reported a card declined error for a service payment.,Card Declined,High,Jane Smith,Assisted customer with pending payment confirmation.
+TKT445,Client reported an unauthorized transaction for an online purchase.,Account Locked,Low,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT446,Customer reported a failed payment for a service payment.,Payment Failure,Critical,John Doe,Assisted customer with pending payment confirmation.
+TKT447,Customer reported a refund issue for a service payment.,Account Locked,Medium,John Doe,Issue resolved by retrying payment.
+TKT448,Client reported payment pending for a subscription payment.,Card Declined,Critical,Jane Smith,Re-enabled account access after verification.
+TKT449,Client reported a failed payment for an online purchase.,Account Locked,Critical,Jane Smith,Issue resolved by retrying payment.
+TKT450,Client reported an unauthorized transaction for a service payment.,Refund Request,Medium,Jane Smith,Informed customer to check card expiry date and try again.
+TKT451,Member reported a card declined error for a service payment.,Payment Failure,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT452,Customer reported a failed payment for a service payment.,Account Locked,High,Alex Johnson,Refund processed as per customer request.
+TKT453,Member reported account lockout for an online purchase.,Refund Request,Low,Michael Green,Refund processed as per customer request.
+TKT454,Client reported account lockout for a subscription payment.,Unauthorized Transaction,Critical,Chris Lee,Issue resolved by retrying payment.
+TKT455,User reported payment pending for a subscription payment.,Payment Pending,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT456,Member reported payment pending for a subscription payment.,Payment Pending,Low,Jane Smith,Refund processed as per customer request.
+TKT457,Member reported an unauthorized transaction for an online purchase.,Account Locked,High,Chris Lee,Re-enabled account access after verification.
+TKT458,User reported a failed payment for a subscription payment.,Account Locked,Low,Jane Smith,Assisted customer with pending payment confirmation.
+TKT459,Client reported a refund issue for an online purchase.,Refund Request,Critical,Alex Johnson,Issue resolved by retrying payment.
+TKT460,User reported an unauthorized transaction for a service payment.,Payment Pending,High,Alex Johnson,Assisted customer with pending payment confirmation.
+TKT461,Customer reported payment pending for an online purchase.,Card Declined,Medium,Patricia Brown,Re-enabled account access after verification.
+TKT462,User reported a failed payment for a service payment.,Payment Failure,Medium,Michael Green,Issue resolved by retrying payment.
+TKT463,Client reported account lockout for a subscription payment.,Payment Failure,Critical,John Doe,Informed customer to check card expiry date and try again.
+TKT464,Member reported payment pending for a service payment.,Card Declined,Medium,Chris Lee,Re-enabled account access after verification.
+TKT465,Client reported a failed payment for a service payment.,Payment Pending,Critical,Michael Green,Re-enabled account access after verification.
+TKT466,Customer reported payment pending for a service payment.,Payment Failure,High,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT467,Customer reported payment pending for a subscription payment.,Payment Failure,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT468,Customer reported a card declined error for a service payment.,Unauthorized Transaction,Low,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT469,Customer reported an unauthorized transaction for a service payment.,Card Declined,Low,John Doe,Issue resolved by retrying payment.
+TKT470,Member reported an unauthorized transaction for an online purchase.,Account Locked,High,Chris Lee,Assisted customer with pending payment confirmation.
+TKT471,Client reported a refund issue for a subscription payment.,Card Declined,Critical,John Doe,Issue resolved by retrying payment.
+TKT472,Client reported a refund issue for an online purchase.,Account Locked,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT473,Client reported payment pending for a service payment.,Refund Request,Low,Alex Johnson,Informed customer to check card expiry date and try again.
+TKT474,Member reported payment pending for a subscription payment.,Payment Failure,High,Patricia Brown,Re-enabled account access after verification.
+TKT475,Customer reported account lockout for an online purchase.,Card Declined,Medium,Patricia Brown,Re-enabled account access after verification.
+TKT476,Client reported account lockout for a subscription payment.,Unauthorized Transaction,Low,Michael Green,Refund processed as per customer request.
+TKT477,Client reported a failed payment for a subscription payment.,Refund Request,High,Michael Green,Refund processed as per customer request.
+TKT478,User reported payment pending for a service payment.,Account Locked,Low,Patricia Brown,Blocked unauthorized transaction and advised client to change password.
+TKT479,User reported a failed payment for a subscription payment.,Payment Failure,Low,Michael Green,Re-enabled account access after verification.
+TKT480,User reported account lockout for a subscription payment.,Payment Pending,Critical,Jane Smith,Assisted customer with pending payment confirmation.
+TKT481,Member reported a failed payment for a service payment.,Payment Failure,Low,Michael Green,Re-enabled account access after verification.
+TKT482,User reported a card declined error for a subscription payment.,Unauthorized Transaction,High,John Doe,Issue resolved by retrying payment.
+TKT483,Customer reported a failed payment for a service payment.,Unauthorized Transaction,Critical,John Doe,Blocked unauthorized transaction and advised client to change password.
+TKT484,Customer reported a refund issue for an online purchase.,Unauthorized Transaction,Medium,Jane Smith,Refund processed as per customer request.
+TKT485,Member reported an unauthorized transaction for a subscription payment.,Payment Failure,Critical,John Doe,Informed customer to check card expiry date and try again.
+TKT486,Client reported a failed payment for a service payment.,Card Declined,High,Jane Smith,Refund processed as per customer request.
+TKT487,Member reported account lockout for an online purchase.,Unauthorized Transaction,Critical,Michael Green,Blocked unauthorized transaction and advised client to change password.
+TKT488,User reported a refund issue for a service payment.,Payment Failure,High,Jane Smith,Issue resolved by retrying payment.
+TKT489,Member reported a card declined error for a subscription payment.,Refund Request,High,Jane Smith,Assisted customer with pending payment confirmation.
+TKT490,User reported a refund issue for a subscription payment.,Payment Pending,Low,Chris Lee,Assisted customer with pending payment confirmation.
+TKT491,User reported account lockout for a subscription payment.,Payment Failure,High,Alex Johnson,Blocked unauthorized transaction and advised client to change password.
+TKT492,Member reported payment pending for a service payment.,Unauthorized Transaction,Low,Chris Lee,Assisted customer with pending payment confirmation.
+TKT493,User reported account lockout for an online purchase.,Payment Pending,Medium,Michael Green,Issue resolved by retrying payment.
+TKT494,Member reported a failed payment for a subscription payment.,Card Declined,Medium,Jane Smith,Informed customer to check card expiry date and try again.
+TKT495,Client reported account lockout for an online purchase.,Card Declined,Critical,Michael Green,Issue resolved by retrying payment.
+TKT496,Client reported a card declined error for a subscription payment.,Payment Pending,Critical,Alex Johnson,Refund processed as per customer request.
+TKT497,Customer reported payment pending for an online purchase.,Account Locked,Medium,Patricia Brown,Refund processed as per customer request.
+TKT498,Member reported a card declined error for a subscription payment.,Unauthorized Transaction,Medium,Chris Lee,Informed customer to check card expiry date and try again.
+TKT499,User reported a card declined error for an online purchase.,Refund Request,Critical,Michael Green,Informed customer to check card expiry date and try again.
+TKT500,Customer reported a card declined error for an online purchase.,Payment Pending,High,Alex Johnson,Re-enabled account access after verification.
