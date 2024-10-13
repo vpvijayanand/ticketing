@@ -6,6 +6,7 @@ from tensorflow.keras.layers import Dense, Dropout, Input
 from tensorflow.keras.callbacks import EarlyStopping
 from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
+import pickle
 
 # Load the CSV data
 df = pd.read_csv('data/payment_tickets_500.csv')
@@ -29,10 +30,10 @@ y_category_encoded = label_encoder_category.fit_transform(y_category)
 label_encoder_severity = LabelEncoder()
 y_severity_encoded = label_encoder_severity.fit_transform(y_severity)
 
-# Step 3: Train-test split (using 80% for training and 20% for testing)
-X_train, X_test, y_train_cat, y_test_cat, y_train_sev, y_test_sev = train_test_split(
-    X_tfidf, y_category_encoded, y_severity_encoded, test_size=0.2, random_state=42
-)
+# Step 3: Use all data for training (no train-test split here)
+X_train = X_tfidf
+y_train_cat = y_category_encoded
+y_train_sev = y_severity_encoded
 
 # Step 4: Define Input layer
 input_layer = Input(shape=(X_tfidf.shape[1],))
@@ -60,18 +61,17 @@ model.compile(optimizer='adam',
 # Step 8: Use EarlyStopping to prevent overfitting
 early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
-# Step 9: Train the model
+# Step 9: Train the model on all data
 history = model.fit(X_train, 
                     {'category_output': y_train_cat, 'severity_output': y_train_sev},
                     epochs=50, 
-                    validation_data=(X_test, {'category_output': y_test_cat, 'severity_output': y_test_sev}),
+                    validation_split=0.2,  # Use a validation split for early stopping
                     callbacks=[early_stopping])
 
 # Step 10: Save the trained model using the .keras format (new Keras format)
 model.save('model/ticket_classifier.keras')
 
 # Optional: Save the label encoders as well so you can decode the predictions later
-import pickle
 with open('model/category_label_encoder.pkl', 'wb') as f:
     pickle.dump(label_encoder_category, f)
 
