@@ -9,7 +9,7 @@ def connect_db():
             password="vijay123",  # Replace with your MariaDB password
             host="localhost",  # Replace with your MariaDB host
             port=3306,  # Replace with your MariaDB port, if different
-            database="tickets_db"  # Replace with your database name
+            database="ticket_db"  # Replace with your database name
         )
     except mariadb.Error as e:
         print(f"Error connecting to MariaDB Platform: {e}")
