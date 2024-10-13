@@ -53,7 +53,7 @@ def process_csv(file_path):
     with open(file_path, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            ticket_id = int(row['Ticket_ID'])
+            ticket_id = row['Ticket_ID']
             problem_description = row['Problem Description']
             category_name = row['Category']
             severity = row['Severity']
