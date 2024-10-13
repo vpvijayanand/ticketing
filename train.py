@@ -1,60 +1,77 @@
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.callbacks import EarlyStopping
+from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
-import pickle
 
 # Load the CSV data
-df = pd.read_csv('data/ticket_data.csv')
+df = pd.read_csv('data/payment_tickets_500.csv')
 
-# Vectorize the problem descriptions
-tfidf = TfidfVectorizer(max_features=500)
-X = tfidf.fit_transform(df['Problem_Description']).toarray()
+# Debug: Print column names to ensure they match the CSV file
+print("Columns in the dataset:", df.columns)
 
-# Save the vectorizer for later use
-with open('preprocessing/vectorizer.pkl', 'wb') as f:
-    pickle.dump(tfidf, f)
+# Ensure the column names are correct
+# If the column name differs from 'Problem_Description', update it here
+X = df['Problem Description']  # Features (Input text)
+y_category = df['Category']    # Labels for category
+y_severity = df['Severity']    # Labels for severity
 
-# Label encode the Category and Severity
-le_category = LabelEncoder()
-le_severity = LabelEncoder()
+# Step 1: Preprocess the text data using TF-IDF
+tfidf = TfidfVectorizer(max_features=500)  # Limiting to top 500 features
+X_tfidf = tfidf.fit_transform(X).toarray()
 
-df['Category'] = le_category.fit_transform(df['Category'])
-df['Severity'] = le_severity.fit_transform(df['Severity'])
+# Step 2: Encode the labels (Category and Severity) into integers
+label_encoder_category = LabelEncoder()
+y_category_encoded = label_encoder_category.fit_transform(y_category)
 
-# Define target variables
-y_category = df['Category']
-y_severity = df['Severity']
+label_encoder_severity = LabelEncoder()
+y_severity_encoded = label_encoder_severity.fit_transform(y_severity)
 
-# Split the data
-X_train, X_test, y_category_train, y_category_test = train_test_split(X, y_category, test_size=0.2, random_state=42)
-_, _, y_severity_train, y_severity_test = train_test_split(X, y_severity, test_size=0.2, random_state=42)
+# Step 3: Train-test split (using 80% for training and 20% for testing)
+X_train, X_test, y_train_cat, y_test_cat, y_train_sev, y_test_sev = train_test_split(
+    X_tfidf, y_category_encoded, y_severity_encoded, test_size=0.2, random_state=42
+)
 
-# Build the category classification model
-model_category = tf.keras.models.Sequential([
-    tf.keras.layers.Dense(128, activation='relu', input_shape=(X_train.shape[1],)),
-    tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(64, activation='relu'),
-    tf.keras.layers.Dense(len(df['Category'].unique()), activation='softmax')
+# Step 4: Build a simple neural network model using Keras
+model = Sequential([
+    Dense(128, input_dim=X_tfidf.shape[1], activation='relu'),
+    Dropout(0.5),
+    Dense(64, activation='relu'),
+    Dropout(0.5),
+    Dense(32, activation='relu'),
+    # We will have two output layers: one for category and one for severity
+    Dense(len(label_encoder_category.classes_), activation='softmax', name='category_output'),
+    Dense(len(label_encoder_severity.classes_), activation='softmax', name='severity_output')
 ])
 
-# Build the severity classification model
-model_severity = tf.keras.models.Sequential([
-    tf.keras.layers.Dense(128, activation='relu', input_shape=(X_train.shape[1],)),
-    tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(64, activation='relu'),
-    tf.keras.layers.Dense(len(df['Severity'].unique()), activation='softmax')
-])
+# Step 5: Compile the model
+model.compile(optimizer='adam',
+              loss={'category_output': 'sparse_categorical_crossentropy', 
+                    'severity_output': 'sparse_categorical_crossentropy'},
+              metrics=['accuracy'])
 
-# Compile the models
-model_category.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model_severity.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+# Step 6: Use EarlyStopping to prevent overfitting
+early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
-# Train the models
-model_category.fit(X_train, y_category_train, epochs=10, validation_data=(X_test, y_category_test))
-model_severity.fit(X_train, y_severity_train, epochs=10, validation_data=(X_test, y_severity_test))
+# Step 7: Train the model
+history = model.fit(X_train, 
+                    {'category_output': y_train_cat, 'severity_output': y_train_sev},
+                    epochs=50, 
+                    validation_data=(X_test, {'category_output': y_test_cat, 'severity_output': y_test_sev}),
+                    callbacks=[early_stopping])
 
-# Save the models
-model_category.save('models/category_model.h5')
-model_severity.save('models/severity_model.h5')
+# Step 8: Save the trained model using the .keras format (new Keras format)
+model.save('model/ticket_classifier.keras')
+
+# Optional: Save the label encoders as well so you can decode the predictions later
+import pickle
+with open('model/category_label_encoder.pkl', 'wb') as f:
+    pickle.dump(label_encoder_category, f)
+
+with open('model/severity_label_encoder.pkl', 'wb') as f:
+    pickle.dump(label_encoder_severity, f)
+
+print("Model training complete and saved as 'ticket_classifier.keras'.")
