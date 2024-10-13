@@ -55,7 +55,7 @@ model = Model(inputs=input_layer, outputs={'category_output': category_output, '
 model.compile(optimizer='adam',
               loss={'category_output': 'sparse_categorical_crossentropy', 
                     'severity_output': 'sparse_categorical_crossentropy'},
-              metrics=['accuracy'])
+              metrics={'category_output': 'accuracy', 'severity_output': 'accuracy'})  # Set metrics for each output
 
 # Step 8: Use EarlyStopping to prevent overfitting
 early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
