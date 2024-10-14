@@ -4,8 +4,8 @@ import pickle
 import mariadb
 
 # Load the models
-category_model = tf.keras.models.load_model('models/category_model.h5')
-severity_model = tf.keras.models.load_model('models/severity_model.h5')
+category_model = tf.keras.models.load_model('model/category_model.h5')
+severity_model = tf.keras.models.load_model('model/severity_model.h5')
 
 # Load the vectorizer
 with open('preprocessing/vectorizer.pkl', 'rb') as f:
