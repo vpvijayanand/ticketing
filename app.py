@@ -13,8 +13,8 @@ with open('preprocessing/vectorizer.pkl', 'rb') as f:
 
 # Connect to MariaDB
 conn = mariadb.connect(
-    user="vijay",
-    password="vijay123",
+    user="ticketadmin",
+    password="Ticket@123",
     host="localhost",
     database="ticket_db"
 )
