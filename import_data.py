@@ -6,8 +6,8 @@ import hashlib
 def connect_db():
     try:
         return mariadb.connect(
-            user="vijay",  # Replace with your MariaDB username
-            password="vijay123",  # Replace with your MariaDB password
+            user="ticketadmin",  # Replace with your MariaDB username
+            password="Ticket@123",  # Replace with your MariaDB password
             host="localhost",  # Replace with your MariaDB host
             port=3306,  # Replace with your MariaDB port, if different
             database="ticket_db"  # Replace with your database name
