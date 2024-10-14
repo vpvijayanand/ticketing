@@ -19,7 +19,7 @@ CREATE TABLE Agents (
 
 -- Create 'Tickets' table
 CREATE TABLE Tickets_history (
-    ticket_id INT PRIMARY KEY,
+    ticket_id VARCHAR(255) PRIMARY KEY,  -- Change INT to VARCHAR for alphanumeric ticket IDs
     problem_description TEXT,
     category_id INT,
     severity VARCHAR(50),
@@ -28,3 +28,4 @@ CREATE TABLE Tickets_history (
     FOREIGN KEY (category_id) REFERENCES Categories(id),
     FOREIGN KEY (agent_id) REFERENCES Agents(id)
 );
+
