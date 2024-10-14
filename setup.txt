@@ -34,6 +34,8 @@ python3 -m venv ml_env
 source ml_env/bin/activate
 pip install tensorflow scikit-learn pandas mariadb mysql-connector-python flask
 pip install Flask tensorflow scikit-learn pandas
+pip install --upgrade google-cloud-translate
+
 
 
 
