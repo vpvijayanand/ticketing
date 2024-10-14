@@ -40,6 +40,8 @@ pip install Flask tensorflow scikit-learn pandas
 pip install --upgrade google-cloud-translate
 export GOOGLE_APPLICATION_CREDENTIALS="/home/gcpticketingsystem/ticketing/credentials.json"
 Cloud Translation API to be activated
+Dialogflow API to be activated
+Vertex API to be activated
 
 
 
