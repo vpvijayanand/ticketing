@@ -26,11 +26,11 @@ def insert_categories(cursor, category_name):
     return result[0]
 
 # Insert agents into the 'Agents' table
-def insert_agents(cursor, agent_name, language):
+def insert_agents(cursor, agent_name, languages):
     cursor.execute("SELECT id FROM Agents WHERE agent_name = %s", (agent_name,))
     result = cursor.fetchone()
     if not result:
-        cursor.execute("INSERT INTO Agents (agent_name, language) VALUES (%s, %s)", (agent_name, language))
+        cursor.execute("INSERT INTO Agents (agent_name, languages) VALUES (%s, %s)", (agent_name, languages))
         return cursor.lastrowid
     return result[0]
 
