@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldline :: Ticketing</title>
+<link href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<!-- Header -->
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/worldline-logo.svg" alt="Logo" style="height: 25px;">
+            <h1 class="h4">Ticketing</h1>
+        </div>
+    </header>
+
+    <main class="container my-5">
+<div id="notification" class="alert alert-success alert-dismissible fade show" role="alert" style="display:none;">
+            <span id="notification_content"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Problem Description</th>
+                <th>Language</th>
+                <th>Severity</th>
+                <th>Assigned To</th>
+                <th>Solution Comments</th>
+                <th>Updated Category</th>
+                <th>Status</th>
+                <th>Escalation Level</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Problem Description</th>
+                <th>Language</th>
+                <th>Severity</th>
+                <th>Assigned To</th>
+                <th>Solution Comments</th>
+                <th>Updated Category</th>
+                <th>Status</th>
+                <th>Escalation Level</th>
+                <th>Action</th>
+            </tr>
+        </tfoot>
+    </table>
+  
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Update Status</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Your modal content here -->
+                <input type="hidden" name="ticket_id" id="ticket_id" />
+                <table width=100% class='table table-stripped'>
+                    
+                    <tr>
+                        <th>Status</th><td><select class='select' id="status"><option value="">Select an option</option></select></td>
+                    </tr>
+                    <tr id="solution_comments_tr" >
+                        <th>Solution Comments</th><th><input type="text" id="solution_comments" class='formElement' name="solution_comments" />
+                    </tr>
+                    <tr id="new_category_tr">
+                        <th>New Category</th><td><select class='select' id="new_category"><option value="">Select an option</option></select></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="update_status">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">Powered by WGS</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+
+function showHide(val){
+    if ( val == 'Problem Solved'){
+        $("#new_category_tr").show();
+        $("#solution_comments_tr").show();
+    }else{
+        $("#new_category_tr").hide();
+        $("#solution_comments_tr").hide();
+    }
+}
+
+$(document).ready(function(){
+    table = new DataTable('#example', {
+        ajax: 'scripts/server_processing.php',
+        processing: true,
+        serverSide: true,
+        columnDefs: [
+            {
+                data: null,
+                defaultContent: '<button  class="update-details btn btn-primary">Update</button>' +
+                                '<button  class="escalte btn btn-danger">Escalate</button>',
+                targets: -1
+            }
+        ]
+    });
+
+    table.on('click', '.escalate', function(e){
+        let data = table.row(e.target.closest('tr')).data();    
+        params = {
+            'ticket_id' : data[0]
+        }
+        
+        $.ajax({
+                url : 'scripts/escalate.php', // URL to send the request to
+                type : 'POST', // or 'POST'
+                async : false,
+                data : params,
+                success : function(response) {
+                    if(response=='1'){
+                        $("#notification_content").text("Status updated successfully!!!")
+                    }else{
+                        $("#notification_content").text(response)
+                    }
+                    $('#notification').fadeIn();
+                    table.ajax.reload();
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.error('Error: ' + error);
+                }
+            });
+    })
+
+    table.on('click', '.update-details', function (e) {
+        let data = table.row(e.target.closest('tr')).data();    
+        $("#ticket_id").val(data[0])
+        $.ajax({
+                url: 'scripts/agents_api.php', // URL to send the request to
+                type: 'GET', // or 'POST'
+                dataType: 'json', // Expected data type from server
+                async:false,
+                success: function(response) {
+                    // Handle the response
+                    $('#assigned_to').empty().append('<option value="">Select an option</option>');
+                    
+                    // Loop through the response and add options
+                    $.each(response, function(index, item) {
+                        console.log(index)
+                        $('#assigned_to').append($('<option>', {
+                            value: index, // Use appropriate property
+                            text: item // Use appropriate property
+                        }));
+                    });
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.error('Error: ' + error);
+                }
+            });
+
+            $.ajax({
+                url: 'scripts/status_api.php', // URL to send the request to
+                type: 'GET', // or 'POST'
+                dataType: 'json', // Expected data type from server
+                async:false,
+                success: function(response) {
+                    // Handle the response
+                    $('#status').empty().append('<option value="">Select an option</option>');
+                    
+                    // Loop through the response and add options
+                    $.each(response, function(index, item) {
+                        $('#status').append($('<option>', {
+                            value: item, // Use appropriate property
+                            text: item // Use appropriate property
+                        }));
+                    });
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.error('Error: ' + error);
+                }
+            });
+
+            $.ajax({
+                url: 'scripts/categories_api.php', // URL to send the request to
+                type: 'GET', // or 'POST'
+                dataType: 'json', // Expected data type from server
+                async:false,
+                success: function(response) {
+                    // Handle the response
+                    $('#new_category').empty().append('<option value="">Select an option</option>');
+                    
+                    // Loop through the response and add options
+                    $.each(response, function(index, item) {
+                        $('#new_category').append($('<option>', {
+                            value: item, // Use appropriate property
+                            text: item // Use appropriate property
+                        }));
+                    });
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.error('Error: ' + error);
+                }
+            });
+
+
+            $("#status").val(data[8])
+            $("#solution_comments").val(data[6])
+            $("#new_category").val(data[7])
+
+            $("#status").on('change', function(){
+                showHide($(this).val())
+            })
+            showHide($("#status").val())
+            $('#myModal').modal('show');
+    });
+
+    $("#update_status").on('click', function(e){
+        let params = {
+            ticket_id : $('#ticket_id').val(),
+            solution_comments : $('#solution_comments').val(),
+            new_category : $('#new_category').val(),
+            status : $('#status').val(),
+        }
+
+        $.ajax({
+                url: 'scripts/update_status.php', // URL to send the request to
+                type: 'POST', // or 'POST'
+                async:false,
+                data:params,
+                success: function(response) {
+                    if(response=='1'){
+                        $("#notification_content").text("Status updated successfully!!!")
+                    }else{
+                        $("#notification_content").text(response)
+                    }
+                    $('#myModal').modal('hide');
+                    $('#notification').fadeIn();
+                    table.ajax.reload();
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.error('Error: ' + error);
+                }
+            });
+    })
+})
+</script>
+
