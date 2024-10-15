@@ -1,7 +1,7 @@
 <?php
 require'db_conn.php';
 
-$sql = 'select agent_id, agent_name from agents';
+$sql = 'select agent_id, agent_name from Agents';
 $result = $conn->query($sql); 
 
 $agents = [];
