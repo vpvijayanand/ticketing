@@ -38,6 +38,8 @@ source ml_env/bin/activate
 pip install tensorflow scikit-learn pandas mariadb mysql-connector-python flask
 pip install Flask tensorflow scikit-learn pandas
 pip install --upgrade google-cloud-translate
+pip install --upgrade google-cloud-language
+
 export GOOGLE_APPLICATION_CREDENTIALS="/home/gcpticketingsystem/ticketing/credentials.json"
 Cloud Translation API to be activated
 Dialogflow API to be activated
